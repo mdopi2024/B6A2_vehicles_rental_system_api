@@ -6,7 +6,7 @@ const router = Router();
 
 router.post('/signup',usersController.signupUsers);
 router.post('/signin',usersController.loginUsers)
-router.get("/users",auth("admin"),usersController.getAllUser)
+router.get("/",auth("admin"),usersController.getAllUser)
 router.put("/:userId",auth("admin","customer"),usersController.updateUser)
 router.delete("/:userId",auth("admin"),usersController.deleteUser)
 

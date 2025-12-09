@@ -21,13 +21,14 @@ const creatBooking = async(req:Request,res:Response)=>{
 
 
 const getAllBooking = async(req:Request,res:Response)=>{
+    console.log(req.body)
 try{
-    const result = await bookingServices.getAllBooking();
     res.status(200).json({
         success:true,
         message:'done'
     })
 }catch(err:any){
+    console.log(err)
     res.status(500).json({
         success:false,
         message:err.message,

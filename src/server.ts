@@ -24,8 +24,6 @@ app.get('/', (req:Request, res:Response) => {
  */
 
 app.use('/api/v1/auth',usersRouter),
-app.use('/api/v1/auth',usersRouter)
-app.use("/api/v1",usersRouter)
 app.use("/api/v1/users",usersRouter)
 /**
  * vehicles all opatation here
@@ -43,7 +41,8 @@ app.use('/api/v1/vehicles',vehicleRouter)
  */
 
 app.use('/api/v1',bookingRoute)
-// app.use('/api/v1',bookingRoute)
+// app.use('/api/v1/bookings',bookingRoute)
+app.use('/book',bookingRoute)
 app.use('/api/v1/bookings',bookingRoute)
 
 

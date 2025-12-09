@@ -86,7 +86,8 @@ const deleteUser= async(id:string)=>{
         throw new Error("This user does not exist")
     }
 
-   if(isBookedById.rows[0].status === 'active'){
+
+   if(isBookedById.rows.length && isBookedById.rows[0].status === 'active'){
     throw new Error("This user booking status is Active")
    }
 
