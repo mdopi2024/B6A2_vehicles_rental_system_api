@@ -81,5 +81,5 @@ npm run dev
 - `POST /api/v1/bookings` - Create booking
 - `GET /api/v1/bookings` - Get bookings
 - `PUT /api/v1/bookings/:id` - Update booking status
----
+----
 
