@@ -21,11 +21,13 @@ const creatBooking = async(req:Request,res:Response)=>{
 
 
 const getAllBooking = async(req:Request,res:Response)=>{
-    console.log(req.body)
+    const user = req.user
 try{
+    const result = await bookingServices.getAllBooking(user as JwtPayload)
     res.status(200).json({
         success:true,
-        message:'done'
+        message: "Bookings retrieved successfully",
+        data:result
     })
 }catch(err:any){
     console.log(err)

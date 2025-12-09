@@ -29,18 +29,13 @@ app.use("/api/v1/users",usersRouter)
  * vehicles all opatation here
  */
 
-
 app.use('/api/v1/vehicles',vehicleRouter)
-
 
 
 /**
  * all booking api are here
  */
 
-app.use('/api/v1',bookingRoute)
-// app.use('/api/v1/bookings',bookingRoute)
-app.use('/book',bookingRoute)
 app.use('/api/v1/bookings',bookingRoute)
 
 
