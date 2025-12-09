@@ -5,7 +5,7 @@ A simple backend API built with **Node.js, Express, TypeScript, and PostgreSQL**
 ---
 
 ### Live Link : 
-`https://your-deployment-url.com`
+`https://b6-a2-rent-vahicles-api-system-b5ih4zjyk-md-opis-projects.vercel.app/`
 
 ---
 
