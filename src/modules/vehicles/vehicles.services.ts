@@ -55,8 +55,11 @@ const deleteVehicle = async ( id: string) => {
   const vehicle = await pool.query(getVehicle,[id])
 
    const vehicleDetails = vehicle.rows[0]
+   if(vehicle.rows.length === 0){
+    throw new Error("This vehcle does not exits")
+   }
   
-   if(vehicleDetails.availability_status === 'booked'){
+   if(vehicleDetails.availability_status === 'active' ||vehicleDetails.availability_status === 'booked'){
     throw new Error("The vehicle is currently booked and cannot be deleted.")
    }
  

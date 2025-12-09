@@ -29,11 +29,9 @@ app.use("/api/v1/users",usersRouter)
  * vehicles all opatation here
  */
 
-app.use('/api/v1',vehicleRouter)
-app.use('/api/v1',vehicleRouter)
+
 app.use('/api/v1/vehicles',vehicleRouter)
-app.use('/api/v1/vehicles',vehicleRouter)
-app.use('/api/v1/vehicles',vehicleRouter)
+
 
 
 /**
